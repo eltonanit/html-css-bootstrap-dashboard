@@ -18,8 +18,10 @@
 <body>
 
 
+
+    <!-- ----------------------------HEADER BOOLEAN  -->
     <div id="top">
-        <div class="bg-whitw text-white">
+        <div class=" text-white">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -29,12 +31,21 @@
                                     <a class="navbar-brand">
                                         <img src="img/logo.svg" alt="">
                                     </a>
-                                    <form class="d-flex col-10 me-0" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search"
-                                            aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <form class="d-flex col-10 me-0 " role="search">
+                                        <input class="form-control me-2 " type="search"
+                                            placeholder="Prova a cercare la lezione di Laravel" aria-label="Search">
+                                        <button class="btn text-secondary" type="submit"> <i
+                                                class="fa-solid fa-list-ul"></i></button>
+                                        <button class="btn text-secondary" type="submit"> <i
+                                                class="fa-solid fa-circle-question"></i></button>
+                                        <button class="btn text-secondary" type="submit"> <i
+                                                class="fa-solid fa-ellipsis-vertical"></i></button>
+
+                                        <button class="btn text-warning" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                                class="fa-solid fa-bell"></i></button>
+
+
 
                                     </form>
                                 </div>
@@ -47,72 +58,141 @@
         </div>
 
     </div>
+
+    <!--  ----------------------SIDEBAR -->
     <div id="bottom">
         <div id="sidebar">
-            
+            <div class="  py-3">
+
+                <ul class=" text-white text-center">
+                    <li><i class="fa-solid fa-house"></i><span class="	 d-none d-lg-inline  ">Home</span> </li>
+                    <li><i class="fa-solid fa-chart-simple"></i><span class="	 d-none d-lg-inline  ">Stats</span></li>
+                    <li><i class="fa-solid fa-signal"></i><span class="	 d-none d-lg-inline  ">Signals</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="sidebar-bottom">
 
         </div>
 
 
+
+
+
+        <!--  ----------------------MAIN-->
         <div id="main">
 
-            <div class="primary-bg-green text-white py-3">
+            <!--  ----------------------PARTE BLU   COL-12-->
+
+            <div class="primary-bg-lightblue  text-white py-3">
 
                 <div class="p-3">
                     <div class="container">
                         <div class="row gy-1">
-                            <div class="col-12">
-                                ciao
+                            <div class="col-6">
+                                <h2> Boolean<span class="badge primary-bg-dark  ">Piano Blaze</span></h2>
+                                <h4><span class="badge primary-bg-dark ">3 app</span>
+                                    <span class="badge primary-bg-dark ">boolean mobile app</span>
+                                    <span class="badge primary-bg-dark ">Boolean web app </span>
+                                    <span class="badge primary-bg-dark ">Boolean blog app</span>
+                                </h4>
+                            </div>
+
+                            <div class="col-3 text-start">
+                                <h6>Studenti online ultimi <br>30 minuti Blaze</h6>
+                                <h2>125</h2>
+                            </div>
+                            <div class="col-2 text-start">
+                                <h6>Nuovo Studente </h6>
+                                <button type="button" class="btn " disabled><i class="fa-solid fa-plus"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <!--  ----------------------PARTE BIANCA   LG FISRT : COL-8 COL-4 -->
             <div class="primary-bg-white text-white py-3">
 
                 <div class="p-3">
                     <div class="container">
                         <div class="row gy-1">
+                            <!--  ----------------------PARTE BIANCA   TABELLA -->
                             <div class="col-8">
                                 <div class="card">
                                     <div class="card-header">
-                                        Featured
+                                        Prossime classi
                                     </div>
                                     <div class="card-body">
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
+                                                    <th scope="col">Nome</th>
+                                                    <th scope="col">Data inizio</th>
+                                                    <th scope="col">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
+                                                    <th  scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td ><span id="green">Done </span></td>
+                                                    <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
+                                                    <tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td ><span id="green">Done </span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td > <span id="yellow"> Done</span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td ><span id="green">Done </span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td > <span id="red">Done</span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td ><span id="green">Done </span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td > <span id="red">Done</span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr><tr>
+                                                        <th scope="row"><i id="red-circle" class="fa-solid fa-code"></i>Classe 75</th>
+                                                        <td>15 febbraio 2021</td>
+                                                        <td>20%</td>
+                                                        <td ><span id="green">Done </span></td>
+                                                        <td > <i id="pen-bin" class="fa-solid fa-pen"></i><i id="pen-bin" class="fa-solid fa-trash"></i></td>
+                                                    </tr>
+                                               
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-
+                                <!--  ----------------------PARTE BIANCA   FAQ -->
                                 <div class="card">
                                     <div class="card-header">
                                         Featured
@@ -128,6 +208,7 @@
 
 
                             </div>
+                            <!--  ----------------------PARTE BIANCA   TODO -->
                             <div class="col-4">
                                 <div class="card">
                                     <div class="card-header">
@@ -141,6 +222,8 @@
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
+
+                                <!--  ----------------------PARTE BIANCA   IMMAGINE SCHEMA -->
                                 <div class="card">
                                     <div class="card-header">
                                         Featured
@@ -171,6 +254,15 @@
 
 
 </body>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        ...
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

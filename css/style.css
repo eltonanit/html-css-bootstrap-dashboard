@@ -23,11 +23,11 @@
 }
 
 .primary-bg-lightblue {
-    background-color: #3a546d;
+    background-color: #1b72e8;
 }
 
-.primary-bg-white {
-    background-color: white;
+.primary-bg-blue {
+    color: #165bba;
 }
 
 .h-300 {
@@ -48,7 +48,13 @@
 
 /* ------------------- Nuovo esercizio */
 
+ul{
+    list-style-type: none;
+}
 
+.list-sidebar {
+    padding: 10px;
+}
 
 .content-header{
     height: auto;
@@ -56,7 +62,8 @@
 #sidebar{
     width: 50px;
     height: calc(100vh - 100px );
-    background-color: darkblue;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
 }
 #bottom{
     display: flex;
@@ -64,7 +71,7 @@
 #main{
     width: calc( 100vw - 50px);
     height: calc(100vh - auto);
-    background-color: salmon;
+    
 }
 
 @media screen and (min-width: 578px) {
@@ -77,4 +84,46 @@
             background-image: url;
         }
     
+}
+
+#red-circle{
+    background-color: rgb(253, 105, 60);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: auto;
+    margin-right: 5px;
+}
+
+#green {
+    background-color: rgb(16, 98, 27);
+    color: white;
+    padding: 1px;
+    border-radius: 10%;
+    width: auto;
+    
+}
+
+#yellow{
+    background-color: rgb(255, 255, 0);
+        color: white;
+        padding: 1px;
+        border-radius: 10%;
+        width: auto;
+}
+
+#red {
+background-color: rgb(244, 5, 5);
+    color: white;
+    padding: 1px;
+    border-radius: 10%;
+    width: auto;
+}
+
+#pen-bin {
+border: grey 2px solid ;    
+    border-radius: 10%;
+    width: auto;
+    margin: 5px;
+    padding: 10px;
 }
