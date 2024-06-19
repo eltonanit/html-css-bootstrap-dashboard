@@ -46,31 +46,35 @@
     height: 400px;
 }
 
-/* ------------------- BOX IMG */
-.box img {
-    width: 300px;
+/* ------------------- Nuovo esercizio */
+
+
+
+.content-header{
     height: auto;
-    object-fit: cover;
+}
+#sidebar{
+    width: 50px;
+    height: calc(100vh - 100px );
+    background-color: darkblue;
+}
+#bottom{
+    display: flex;
+}
+#main{
+    width: calc( 100vw - 50px);
+    height: calc(100vh - auto);
+    background-color: salmon;
 }
 
-.lines:after,
-.lines:before {
-    content: '';
-    width: 100px;
-    height: 3px;
-    background-color: white;
-    display: inline-block;
-    vertical-align: middle;
-
-}
-
-.black-lines:after,
-.black-lines:before {
-    content: '';
-    width: 100px;
-    height: 3px;
-    background-color: black;
-    display: inline-block;
-    vertical-align: middle;
-
+@media screen and (min-width: 578px) {
+    #sidebar{
+        width: 150px;
+    }
+        #main {
+    width: calc(100vw - 150px);   }
+        .navbar-brand {
+            background-image: url;
+        }
+    
 }
