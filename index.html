@@ -41,8 +41,8 @@
                                         <button class="btn text-secondary" type="submit"> <i
                                                 class="fa-solid fa-ellipsis-vertical"></i></button>
 
-                                        <button class="btn text-warning" type="button" data-bs-toggle="offcanvas"
-                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                        <button class="btn text-warning" type="button" data-bs-toggle="off canvas"
+                                            data-bs-target="#offc anvasRight" aria-controls="offcanvas Right"><i
                                                 class="fa-solid fa-bell"></i></button>
 
 
@@ -112,7 +112,10 @@
                             </div>
                             <div class="col-2 text-start">
                                 <h6>Nuovo Studente </h6>
-                                <button type="button" class="btn " disabled><i class="fa-solid fa-plus"></i></button>
+                                <button id="btn-studente" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                                 
                             </div>
                         </div>
                     </div>
@@ -273,6 +276,10 @@
 
 
 </body>
+<!-- --------------------------------------FUNZIONE OFFCANAS -->
+
+
+
 <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
